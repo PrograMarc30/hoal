@@ -4,7 +4,7 @@ from .models import Post
 
 def home(request):
     posts = Post.objects.all()
-    return render(request, "blog\home.html", {'posts': posts})
+    return render(request, "index.html", {'posts': posts})
 
 
 def post(request, id):
